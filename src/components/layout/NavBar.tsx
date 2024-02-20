@@ -41,7 +41,7 @@ const NavBar: FC<NavBarProps> = ({}) => {
       </button>
       <ul
         className={`${
-          showMenu ? "fixed translate-x-full " : "fixed -translate-x-0"
+          showMenu ? "fixed translate-x-0 " : "fixed translate-x-full"
         } lg:hidden w-full transition-transform duration-300 ease-in h-screen bg-white bg-opacity-50 top-0 left-0 backdrop-blur-md`}
       >
         <div className="flex justify-end px-4 py-6">
