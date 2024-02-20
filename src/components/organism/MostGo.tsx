@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import PlaceCard from "../atom/PlaceCard";
-import { PlacesData } from "@/constant/places";
+import { PlaceType, PlacesData } from "@/constant/places";
 
 interface MostGoProps {}
 
@@ -14,7 +14,7 @@ const MostGo: FC<MostGoProps> = ({}) => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-16">
-        {PlacesData.map((item, idx) => (
+        {PlacesData.map((item: PlaceType, idx: number) => (
           <PlaceCard
             img={item.img}
             location={item.location}
